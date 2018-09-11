@@ -11,12 +11,9 @@
             var scrollwhell = selector_map.attr('data-scrollwhell');
             var draggable = selector_map.attr('data-draggable');
 
-            if (img_pin == null) {
-                img_pin = 'images/icons/location.png';
-            }
             if (data_map_x == null || data_map_y == null) {
-                data_map_x = 40.007749;
-                data_map_y = -93.266572;
+                data_map_x = 49.281469;
+                data_map_y = -123.108196;
             }
             if (scrollwhell == null) {
                 scrollwhell = 0;
@@ -61,7 +58,6 @@
                 marker = new google.maps.Marker({
                     position: new google.maps.LatLng(locations[i][1], locations[i][2]),
                     map: map,
-                    icon: img_pin
                 });
 
                 google.maps.event.addListener(marker, 'click', (function(marker, i) {
